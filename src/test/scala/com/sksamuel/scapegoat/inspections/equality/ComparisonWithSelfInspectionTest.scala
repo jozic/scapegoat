@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 /** @author Stephen Samuel */
 class ComparisonWithSelfInspectionTest extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new ComparisonWithSelf)
+  override val inspections = Seq(ComparisonWithSelf)
 
   "ComparisonWithSelf" - {
     "should report warning" in {

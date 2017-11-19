@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 /** @author Stephen Samuel */
 class ModOneTest extends FreeSpec with PluginRunner with Matchers {
 
-  override val inspections = Seq(new ModOne)
+  override val inspections = Seq(ModOne)
 
   "mod one use" - {
     "should report warning" in {

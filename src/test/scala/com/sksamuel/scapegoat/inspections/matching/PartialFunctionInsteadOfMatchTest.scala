@@ -12,7 +12,7 @@ class PartialFunctionInsteadOfMatchTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new PartialFunctionInsteadOfMatch)
+  override val inspections = Seq(PartialFunctionInsteadOfMatch)
 
   "when using match instead of partial function" - {
     "should report warning" in {

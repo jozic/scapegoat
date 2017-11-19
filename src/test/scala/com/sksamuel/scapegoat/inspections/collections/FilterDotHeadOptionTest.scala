@@ -10,7 +10,7 @@ class FilterDotHeadOptionTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new FilterDotHeadOption)
+  override val inspections = Seq(FilterDotHeadOption)
 
   "self assignment" - {
     "should report warning" in {

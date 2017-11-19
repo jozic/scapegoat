@@ -5,7 +5,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 
 class LooksLikeInterpolatedStringTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new LooksLikeInterpolatedString)
+  override val inspections = Seq(LooksLikeInterpolatedString)
 
   "LooksLikeInterpolatedString" - {
     "should report warning" - {

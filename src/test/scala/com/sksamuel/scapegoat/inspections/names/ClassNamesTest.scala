@@ -11,7 +11,7 @@ class ClassNamesTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new ClassNames)
+  override val inspections = Seq(ClassNames)
 
   "ClassNames" - {
     "should report warning" - {

@@ -8,7 +8,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 class UnnecessaryIfTest
     extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new UnnecessaryIf)
+  override val inspections = Seq(UnnecessaryIf)
 
   "unncessary if" - {
     "should report warning" in {

@@ -10,7 +10,7 @@ class FilterDotIsEmptyTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new FilterDotIsEmpty)
+  override val inspections = Seq(FilterDotIsEmpty)
 
   "self assignment" - {
     "should report warning" in {

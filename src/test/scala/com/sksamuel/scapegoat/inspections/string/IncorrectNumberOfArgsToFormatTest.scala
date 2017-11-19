@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class IncorrectNumberOfArgsToFormatTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new IncorrectNumberOfArgsToFormat)
+  override val inspections = Seq(IncorrectNumberOfArgsToFormat)
 
   "IncorrectNumberOfArgsToFormat" - {
     "should report warning" in {

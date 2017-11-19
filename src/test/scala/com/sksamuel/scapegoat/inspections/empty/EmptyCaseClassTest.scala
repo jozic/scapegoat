@@ -7,7 +7,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class EmptyCaseClassTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new EmptyCaseClass)
+  override val inspections = Seq(EmptyCaseClass)
 
   "empty class classes" - {
     "should report warning" - {

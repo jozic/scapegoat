@@ -5,7 +5,7 @@ import org.scalatest.{ OneInstancePerTest, FreeSpec, Matchers }
 
 class TraversableLastTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new TraversableLast)
+  override val inspections = Seq(TraversableLast)
 
   "option.last use" - {
     "should report warning" in {

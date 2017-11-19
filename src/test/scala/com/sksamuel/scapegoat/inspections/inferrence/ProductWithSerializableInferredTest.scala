@@ -7,7 +7,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 /** @author Stephen Samuel */
 class ProductWithSerializableInferredTest extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new ProductWithSerializableInferred)
+  override val inspections = Seq(ProductWithSerializableInferred)
 
   "when Product with Serializable is inferred" - {
     "should report warning" in {

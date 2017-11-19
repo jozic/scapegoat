@@ -11,7 +11,7 @@ class VariableShadowingTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new VariableShadowing)
+  override val inspections = Seq(VariableShadowing)
 
   "VariableShadowing" - {
     "should report warning" - {

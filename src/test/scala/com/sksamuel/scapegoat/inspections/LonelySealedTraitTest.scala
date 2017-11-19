@@ -10,7 +10,7 @@ class LonelySealedTraitTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new LonelySealedTrait)
+  override val inspections = Seq(LonelySealedTrait)
 
   "LonelySealedTrait" - {
     "should report warning" - {

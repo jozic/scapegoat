@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class ComparisonToEmptyListTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new ComparisonToEmptyList)
+  override val inspections = Seq(ComparisonToEmptyList)
 
   "ComparisonToEmptyList" - {
     "should report warning" - {

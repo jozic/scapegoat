@@ -10,7 +10,7 @@ class RepeatedCaseBodyTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new RepeatedCaseBody)
+  override val inspections = Seq(RepeatedCaseBody)
 
   "repeated case bodies" - {
     "should report warning" - {

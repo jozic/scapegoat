@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class AvoidToMinusOneTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new AvoidToMinusOne)
+  override val inspections = Seq(AvoidToMinusOne)
 
   "AvoidToMinusOne" - {
     "should report warning" - {

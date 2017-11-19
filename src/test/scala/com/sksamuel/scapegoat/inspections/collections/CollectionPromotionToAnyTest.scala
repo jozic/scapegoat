@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class CollectionPromotionToAnyTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new CollectionPromotionToAny)
+  override val inspections = Seq(CollectionPromotionToAny)
 
   "lists using colon add with list" - {
     "should report warning" in {

@@ -11,7 +11,7 @@ class PointlessTypeBoundsTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new PointlessTypeBounds)
+  override val inspections = Seq(PointlessTypeBounds)
 
   "PointlessTypeBounds" - {
     "should report warning" - {

@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 /** @author Stephen Samuel */
 class JavaConversionsUseTest extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new JavaConversionsUse)
+  override val inspections = Seq(JavaConversionsUse)
 
   "JavaConversionsUse" - {
     "should report warning" in {

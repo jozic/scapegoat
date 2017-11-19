@@ -6,7 +6,7 @@ import org.scalatest.{ OneInstancePerTest, FreeSpec, Matchers }
 /** @author Stephen Samuel */
 class UnsafeContainsTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new UnsafeContains)
+  override val inspections = Seq(UnsafeContains)
 
   "unsafe contains" - {
     "should report warning" in {

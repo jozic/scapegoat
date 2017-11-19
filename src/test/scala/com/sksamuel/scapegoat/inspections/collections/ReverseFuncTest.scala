@@ -9,7 +9,7 @@ class ReverseFuncTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new ReverseFunc)
+  override val inspections = Seq(ReverseFunc)
 
   "ReverseFunc" - {
     "should report warning" in {

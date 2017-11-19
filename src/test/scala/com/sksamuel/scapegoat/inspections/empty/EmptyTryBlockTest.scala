@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class EmptyTryBlockTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new EmptyTryBlock)
+  override val inspections = Seq(EmptyTryBlock)
 
   "empty try block" - {
     "should report warning" in {

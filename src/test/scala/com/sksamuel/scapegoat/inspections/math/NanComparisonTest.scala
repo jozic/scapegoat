@@ -9,7 +9,7 @@ class NanComparisonTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new NanComparison)
+  override val inspections = Seq(NanComparison)
 
   "nan comparison" - {
     "should report warning" - {

@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class IllegalFormatStringTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new IllegalFormatString)
+  override val inspections = Seq(IllegalFormatString)
 
   "unknown conversion type" - {
     "should report warning" in {

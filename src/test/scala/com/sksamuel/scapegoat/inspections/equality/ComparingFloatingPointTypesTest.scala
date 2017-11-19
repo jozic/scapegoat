@@ -10,7 +10,7 @@ class ComparingFloatingPointTypesTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new ComparingFloatingPointTypes)
+  override val inspections = Seq(ComparingFloatingPointTypes)
 
   "comparing floating type inspection" - {
     "should report warning" - {

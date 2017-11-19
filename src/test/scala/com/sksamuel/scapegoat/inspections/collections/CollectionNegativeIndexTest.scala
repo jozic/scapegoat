@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class CollectionNegativeIndexTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new CollectionNegativeIndex)
+  override val inspections = Seq(CollectionNegativeIndex)
 
   "collection negative index" - {
     "should report warning" in {

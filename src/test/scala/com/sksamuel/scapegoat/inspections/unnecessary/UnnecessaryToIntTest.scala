@@ -11,7 +11,7 @@ class UnnecessaryToIntTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new UnnecessaryToInt)
+  override val inspections = Seq(UnnecessaryToInt)
 
   "Unnecessary to int" - {
     "should report warning" - {

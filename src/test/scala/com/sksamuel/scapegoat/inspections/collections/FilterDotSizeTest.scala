@@ -7,7 +7,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 class FilterDotSizeTest
     extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new FilterDotSize)
+  override val inspections = Seq(FilterDotSize)
 
   "filter then size" - {
     "should report warning" in {

@@ -12,7 +12,7 @@ class NoOpOverrideTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new NoOpOverride)
+  override val inspections = Seq(NoOpOverride)
 
   "UnnecessaryOverride" - {
     "should report warning" - {

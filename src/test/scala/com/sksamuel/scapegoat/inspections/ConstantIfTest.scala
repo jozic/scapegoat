@@ -8,7 +8,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class ConstantIfTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new ConstantIf)
+  override val inspections = Seq(ConstantIf)
 
   "ConstantIf" - {
     "should report warning" in {

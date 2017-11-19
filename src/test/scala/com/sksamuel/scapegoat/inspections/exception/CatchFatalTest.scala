@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Marconi Lanna */
 class CatchFatalTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new CatchFatal)
+  override val inspections = Seq(CatchFatal)
 
   "catch _ fatal exception" - {
     "should report warning" in {

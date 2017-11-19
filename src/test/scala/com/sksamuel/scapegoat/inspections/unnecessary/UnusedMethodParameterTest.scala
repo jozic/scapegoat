@@ -10,7 +10,7 @@ class UnusedMethodParameterTest
     extends FreeSpec
     with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new UnusedMethodParameter)
+  override val inspections = Seq(UnusedMethodParameter)
 
   "UnusedMethodParameter" - {
     "should report warning" - {

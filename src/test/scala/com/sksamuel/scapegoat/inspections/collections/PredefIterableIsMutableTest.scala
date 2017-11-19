@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class PredefIterableIsMutableTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new PredefIterableIsMutable)
+  override val inspections = Seq(PredefIterableIsMutable)
 
   "PredefIterableIsMutable" - {
     "should report warning" - {

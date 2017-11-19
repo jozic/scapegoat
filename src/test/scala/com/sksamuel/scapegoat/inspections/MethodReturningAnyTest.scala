@@ -11,7 +11,7 @@ class MethodReturningAnyTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new MethodReturningAny)
+  override val inspections = Seq(MethodReturningAny)
 
   "MethodReturningAny" - {
     "should report warning" - {

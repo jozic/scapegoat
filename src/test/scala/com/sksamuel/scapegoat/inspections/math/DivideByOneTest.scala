@@ -9,7 +9,7 @@ class DivideByOneTest
     with Matchers
     with OneInstancePerTest {
 
-  override val inspections = Seq(new DivideByOne)
+  override val inspections = Seq(DivideByOne)
 
   "divide by one" - {
     "for int" - {

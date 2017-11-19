@@ -10,7 +10,7 @@ class InvalidRegexTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new InvalidRegex)
+  override val inspections = Seq(InvalidRegex)
 
   "invalid regex" - {
     "should report warning" in {

@@ -11,7 +11,7 @@ class SwallowedExceptionTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new SwallowedException)
+  override val inspections = Seq(SwallowedException)
 
   "SwallowedException" - {
     "should report warning" - {

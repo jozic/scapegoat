@@ -6,7 +6,7 @@ import org.scalatest.{ OneInstancePerTest, FreeSpec, Matchers }
 /** @author Stephen Samuel */
 class ParameterlessMethodReturnsUnitTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new ParameterlessMethodReturnsUnit)
+  override val inspections = Seq(ParameterlessMethodReturnsUnit)
 
   "ParameterlessMethodReturnsUnit" - {
     "should report warning" - {

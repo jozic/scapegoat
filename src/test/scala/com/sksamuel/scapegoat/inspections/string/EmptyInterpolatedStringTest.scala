@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class EmptyInterpolatedStringTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new EmptyInterpolatedString)
+  override val inspections = Seq(EmptyInterpolatedString)
 
   "EmptyInterpolatedString" - {
     "should report warning" in {

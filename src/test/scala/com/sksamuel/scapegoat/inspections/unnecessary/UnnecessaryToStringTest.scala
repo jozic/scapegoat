@@ -11,7 +11,7 @@ class UnnecessaryToStringTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new UnnecessaryToString)
+  override val inspections = Seq(UnnecessaryToString)
 
   "Unnecessary toString" - {
     "should report warning" - {

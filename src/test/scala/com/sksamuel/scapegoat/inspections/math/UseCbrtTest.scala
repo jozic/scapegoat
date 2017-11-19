@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 /** @author Matic Potočnik */
 class UseCbrtTest extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new UseCbrt)
+  override val inspections = Seq(UseCbrt)
 
   "using pow instead of cbrt" - {
     "should report warning" in {

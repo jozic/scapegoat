@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class CatchThrowableTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new CatchThrowable)
+  override val inspections = Seq(CatchThrowable)
 
   "catch _ throwable" - {
     "should report warning" in {

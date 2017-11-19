@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class DuplicateSetValueTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new DuplicateSetValue)
+  override val inspections = Seq(DuplicateSetValue)
 
   "duplicate set literals" - {
     "should report warning" in {

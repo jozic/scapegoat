@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class DoubleNegationTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new DoubleNegation)
+  override val inspections = Seq(DoubleNegation)
 
   "DoubleNegation" - {
     "should report warning" in {

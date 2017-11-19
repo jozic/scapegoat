@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class DuplicateMapKeyTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new DuplicateMapKey)
+  override val inspections = Seq(DuplicateMapKey)
 
   "DuplicateMapKey" - {
     "should report warning" in {

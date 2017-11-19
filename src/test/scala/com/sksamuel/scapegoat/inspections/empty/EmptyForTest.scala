@@ -10,7 +10,7 @@ class EmptyForTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new EmptyFor)
+  override val inspections = Seq(EmptyFor)
 
   "EmptyFor" - {
     "should report warning" in {

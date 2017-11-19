@@ -7,7 +7,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class IsInstanceOfTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new IsInstanceOf)
+  override val inspections = Seq(IsInstanceOf)
 
   List(1).size
 

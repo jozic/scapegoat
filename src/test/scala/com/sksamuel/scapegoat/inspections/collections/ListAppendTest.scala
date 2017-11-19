@@ -10,7 +10,7 @@ class ListAppendTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new ListAppend)
+  override val inspections = Seq(ListAppend)
 
   "list.append use" - {
     "should report warning" - {

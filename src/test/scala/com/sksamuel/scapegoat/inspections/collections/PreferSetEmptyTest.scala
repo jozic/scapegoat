@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class PreferSetEmptyTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new PreferSetEmpty)
+  override val inspections = Seq(PreferSetEmpty)
 
   "set apply" - {
     "should report warning" in {

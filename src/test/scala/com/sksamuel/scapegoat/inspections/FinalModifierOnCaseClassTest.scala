@@ -5,7 +5,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 
 class FinalModifierOnCaseClassTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new FinalModifierOnCaseClass)
+  override val inspections = Seq(FinalModifierOnCaseClass)
 
   private def assertFinalModOnCaseClass(code: String): Unit = {
     compileCodeSnippet(code)

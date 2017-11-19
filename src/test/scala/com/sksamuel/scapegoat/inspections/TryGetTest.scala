@@ -7,7 +7,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 /** @author Stephen Samuel */
 class TryGetTest extends FreeSpec with PluginRunner with Matchers {
 
-  override val inspections = Seq(new TryGet)
+  override val inspections = Seq(TryGet)
 
   "try.get use" - {
     "should report warning" in {

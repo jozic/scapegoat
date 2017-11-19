@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class VarClosureTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new VarClosure)
+  override val inspections = Seq(VarClosure)
 
   "VarClosure" - {
     "should report warning" - {

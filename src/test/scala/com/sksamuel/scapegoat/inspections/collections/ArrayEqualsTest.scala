@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class ArrayEqualsTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new ArrayEquals)
+  override val inspections = Seq(ArrayEquals)
 
   "ArrayEquals" - {
     "should report warning" - {

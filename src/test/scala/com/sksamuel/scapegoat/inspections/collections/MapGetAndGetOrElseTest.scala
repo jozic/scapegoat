@@ -5,7 +5,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 
 class MapGetAndGetOrElseTest extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new MapGetAndGetOrElse)
+  override val inspections = Seq(MapGetAndGetOrElse)
 
   private def getOrElseAssertion(code: String): Unit = {
     compileCodeSnippet(code)

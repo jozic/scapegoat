@@ -5,7 +5,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 
 class VarUseTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new VarUse)
+  override val inspections = Seq(VarUse)
 
   "var keyword use" - {
     "should report warning" in {

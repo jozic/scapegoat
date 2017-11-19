@@ -10,7 +10,7 @@ class AnyUseTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new AnyUse)
+  override val inspections = Seq(AnyUse)
 
   "AnyUse" - {
     "should report warning" - {

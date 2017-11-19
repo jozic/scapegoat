@@ -10,7 +10,7 @@ class CollectionIndexOnNonIndexedSeqTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new CollectionIndexOnNonIndexedSeq)
+  override val inspections = Seq(CollectionIndexOnNonIndexedSeq)
 
   "collection index on non indexed seq" - {
     "should report warning" in {

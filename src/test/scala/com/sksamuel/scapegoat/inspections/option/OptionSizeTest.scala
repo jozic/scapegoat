@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 /** @author Stephen Samuel */
 class OptionSizeTest extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new OptionSize)
+  override val inspections = Seq(OptionSize)
 
   "option.size use" - {
     "should report warning" in {

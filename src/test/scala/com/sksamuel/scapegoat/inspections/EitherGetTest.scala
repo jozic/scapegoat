@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 
 class EitherGetTest extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new EitherGet)
+  override val inspections = Seq(EitherGet)
 
   "either right / left projection get use" - {
     "should report warning" in {

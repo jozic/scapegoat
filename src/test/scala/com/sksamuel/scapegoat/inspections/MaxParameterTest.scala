@@ -5,7 +5,7 @@ import org.scalatest.{ OneInstancePerTest, FreeSpec, Matchers }
 
 class MaxParameterTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new MaxParameters)
+  override val inspections = Seq(MaxParameters)
 
   "MaxParameters" - {
     "should report warning" - {

@@ -10,7 +10,7 @@ class FindAndNotEqualsNoneReplaceWithExistsTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new FindAndNotEqualsNoneReplaceWithExists)
+  override val inspections = Seq(FindAndNotEqualsNoneReplaceWithExists)
 
   "FindAndNotEqualsNoneReplaceWithExists" - {
     "should report warning" - {

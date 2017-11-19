@@ -7,7 +7,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 /** @author Stephen Samuel */
 class RedundantFinalizerTest extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new RedundantFinalizer)
+  override val inspections = Seq(RedundantFinalizer)
 
   "redundant finalizer" - {
     "should report warning" in {

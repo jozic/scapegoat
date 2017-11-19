@@ -7,7 +7,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 class FilterOptionAndGetTest
     extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new FilterOptionAndGet)
+  override val inspections = Seq(FilterOptionAndGet)
 
   "filter then size" - {
     "should report warning" in {

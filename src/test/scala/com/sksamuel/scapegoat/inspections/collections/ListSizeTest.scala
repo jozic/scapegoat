@@ -10,7 +10,7 @@ class ListSizeTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new ListSize)
+  override val inspections = Seq(ListSize)
 
   "list.size use" - {
     "should report warning" - {

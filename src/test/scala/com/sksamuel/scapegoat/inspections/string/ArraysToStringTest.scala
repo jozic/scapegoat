@@ -10,7 +10,7 @@ class ArraysToStringTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new ArraysToString)
+  override val inspections = Seq(ArraysToString)
 
   "ArraysToString" - {
     "should report warning" - {

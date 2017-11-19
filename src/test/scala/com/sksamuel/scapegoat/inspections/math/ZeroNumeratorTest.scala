@@ -9,7 +9,7 @@ class ZeroNumeratorTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new ZeroNumerator)
+  override val inspections = Seq(ZeroNumerator)
 
   "zero numerator" - {
     "should report warning" - {

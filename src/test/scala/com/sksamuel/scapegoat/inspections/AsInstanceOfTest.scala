@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 
 class AsInstanceOfTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new AsInstanceOf)
+  override val inspections = Seq(AsInstanceOf)
 
   "AsInstanceOf" - {
     "should report warning" in {

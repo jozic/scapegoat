@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class SubstringZeroTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new SubstringZero)
+  override val inspections = Seq(SubstringZero)
 
   "String.substring(0)" - {
     "should report warning" in {

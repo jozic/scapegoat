@@ -11,7 +11,7 @@ class FinalizerWithoutSuperTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new FinalizerWithoutSuper)
+  override val inspections = Seq(FinalizerWithoutSuper)
 
   "FinalizerWithoutSuper" - {
     "should report warning" - {

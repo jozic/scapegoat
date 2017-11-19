@@ -6,7 +6,7 @@ import org.scalatest.{ OneInstancePerTest, FreeSpec, Matchers }
 /** @author Stephen Samuel */
 class IncorrectlyNamedExceptionsTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new IncorrectlyNamedExceptions)
+  override val inspections = Seq(IncorrectlyNamedExceptions)
 
   "incorrectly named exceptions" - {
     "should report warning" in {

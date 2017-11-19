@@ -7,7 +7,7 @@ import org.scalatest.{ OneInstancePerTest, FreeSpec, Matchers }
 /** @author Stephen Samuel */
 class ComparingUnrelatedTypesTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new ComparingUnrelatedTypes)
+  override val inspections = Seq(ComparingUnrelatedTypes)
 
   private def verifyNoWarnings(code: String): Unit = {
     compileCodeSnippet(code)

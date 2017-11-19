@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 /** @author Matic Potočnik */
 class UseExpM1Test extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new UseExpM1)
+  override val inspections = Seq(UseExpM1)
 
   "using exp(x) - 1 instead of expm1(x)" - {
     "should report warning" in {

@@ -10,7 +10,7 @@ class UnreachableCatchTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new UnreachableCatch)
+  override val inspections = Seq(UnreachableCatch)
 
   "unreachable catch" - {
     "should report warning" - {

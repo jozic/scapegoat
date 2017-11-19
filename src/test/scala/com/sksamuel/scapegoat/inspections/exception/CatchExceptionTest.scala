@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Marconi Lanna */
 class CatchExceptionTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new CatchException)
+  override val inspections = Seq(CatchException)
 
   "catch _ exception" - {
     "should report warning" in {

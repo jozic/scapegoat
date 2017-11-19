@@ -10,7 +10,7 @@ class VarCouldBeValTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new VarCouldBeVal)
+  override val inspections = Seq(VarCouldBeVal)
 
   "Var could be Val" - {
     "should report warning" - {

@@ -11,7 +11,7 @@ class RedundantFinalModifierOnVarTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new RedundantFinalModifierOnVar)
+  override val inspections = Seq(RedundantFinalModifierOnVar)
 
   "RedundantFinalModifierOnVar" - {
     "should report warning" - {

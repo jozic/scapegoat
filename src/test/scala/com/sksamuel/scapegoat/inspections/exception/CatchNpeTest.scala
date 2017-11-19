@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class CatchNpeTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new CatchNpe)
+  override val inspections = Seq(CatchNpe)
 
   "catching null pointer exception" - {
     "should report warning" in {

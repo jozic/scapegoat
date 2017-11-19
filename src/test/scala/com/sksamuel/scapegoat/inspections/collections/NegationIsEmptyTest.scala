@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class NegationIsEmptyTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new NegationIsEmpty)
+  override val inspections = Seq(NegationIsEmpty)
 
   "!isEmpty" - {
     "should report warning" in {

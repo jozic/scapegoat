@@ -10,7 +10,7 @@ class ImpossibleOptionSizeConditionTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new ImpossibleOptionSizeCondition)
+  override val inspections = Seq(ImpossibleOptionSizeCondition)
 
   "options.size > x where x is > 1" - {
     "should report warning" in {

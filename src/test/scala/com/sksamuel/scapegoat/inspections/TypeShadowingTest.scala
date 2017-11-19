@@ -10,7 +10,7 @@ class TypeShadowingTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new TypeShadowing)
+  override val inspections = Seq(TypeShadowing)
 
   "TypeShadowing" - {
     "should report warning" - {

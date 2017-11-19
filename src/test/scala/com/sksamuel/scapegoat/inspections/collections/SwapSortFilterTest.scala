@@ -10,7 +10,7 @@ class SwapSortFilterTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new SwapSortFilter)
+  override val inspections = Seq(SwapSortFilter)
 
   "sort then filter" - {
     "should report warning" in {

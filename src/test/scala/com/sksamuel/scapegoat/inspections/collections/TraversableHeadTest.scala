@@ -6,7 +6,7 @@ import org.scalatest.{ OneInstancePerTest, FreeSpec, Matchers }
 /** @author Stephen Samuel */
 class TraversableHeadTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new TraversableHead)
+  override val inspections = Seq(TraversableHead)
 
   "option.head use" - {
     "should report warning" in {

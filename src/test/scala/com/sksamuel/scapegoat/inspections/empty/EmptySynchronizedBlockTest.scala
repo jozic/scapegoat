@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 /** @author Stephen Samuel */
 class EmptySynchronizedBlockTest extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new EmptySynchronizedBlock)
+  override val inspections = Seq(EmptySynchronizedBlock)
 
   "empty empty" - {
     "should report warning" in {

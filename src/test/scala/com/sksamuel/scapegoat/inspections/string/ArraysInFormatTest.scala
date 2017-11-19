@@ -10,7 +10,7 @@ class ArraysInFormatTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new ArraysInFormat)
+  override val inspections = Seq(ArraysInFormat)
 
   "use of array in format" - {
     "should report warning" in {

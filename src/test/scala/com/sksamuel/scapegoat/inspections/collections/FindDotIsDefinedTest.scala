@@ -7,7 +7,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 class FindDotIsDefinedTest
     extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new FindDotIsDefined)
+  override val inspections = Seq(FindDotIsDefined)
 
   "filter then size" - {
     "should report warning" in {

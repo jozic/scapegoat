@@ -5,7 +5,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 
 class UseLog1PTest extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new UseLog1P)
+  override val inspections = Seq(UseLog1P)
 
   "using log(x + 1) instead of log1p(x)" - {
     "should report warning" in {

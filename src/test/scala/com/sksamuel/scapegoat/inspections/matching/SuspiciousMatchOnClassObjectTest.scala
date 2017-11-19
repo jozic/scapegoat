@@ -9,7 +9,7 @@ class SuspiciousMatchOnClassObjectTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new SuspiciousMatchOnClassObject)
+  override val inspections = Seq(SuspiciousMatchOnClassObject)
 
   "SuspiciousMatchOnClassObject" - {
     "should report warning" - {

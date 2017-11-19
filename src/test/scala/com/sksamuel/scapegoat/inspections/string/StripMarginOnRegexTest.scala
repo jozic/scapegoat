@@ -11,7 +11,7 @@ class StripMarginOnRegexTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new StripMarginOnRegex)
+  override val inspections = Seq(StripMarginOnRegex)
 
   "StripMarginOnRegex" - {
     "should report warning" - {

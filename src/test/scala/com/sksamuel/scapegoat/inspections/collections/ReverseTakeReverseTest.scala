@@ -9,7 +9,7 @@ class ReverseTakeReverseTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new ReverseTakeReverse)
+  override val inspections = Seq(ReverseTakeReverse)
 
   "ReverseTakeReverse" - {
     "should report warning" in {

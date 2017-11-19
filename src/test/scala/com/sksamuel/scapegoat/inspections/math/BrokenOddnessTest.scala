@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 /** @author Stephen Samuel */
 class BrokenOddnessTest extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new BrokenOddness)
+  override val inspections = Seq(BrokenOddness)
 
   "broken odd use" - {
     "should report warning" in {

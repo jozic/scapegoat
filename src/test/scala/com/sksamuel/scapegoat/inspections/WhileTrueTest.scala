@@ -7,7 +7,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class WhileTrueTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new WhileTrue)
+  override val inspections = Seq(WhileTrue)
 
   "while loop" - {
     "when constant" - {

@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class NullAssignmentTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new NullAssignment)
+  override val inspections = Seq(NullAssignment)
 
   "NullAssignment" - {
     "should report warning" - {

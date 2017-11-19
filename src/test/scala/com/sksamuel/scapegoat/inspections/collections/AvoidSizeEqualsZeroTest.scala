@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class AvoidSizeEqualsZeroTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new AvoidSizeEqualsZero)
+  override val inspections = Seq(AvoidSizeEqualsZero)
 
   "collection.size == 0" - {
     "should report warning" in {

@@ -5,7 +5,7 @@ import org.scalatest.{ FreeSpec, Matchers }
 
 class UseSqrtTest extends FreeSpec with Matchers with PluginRunner {
 
-  override val inspections = Seq(new UseSqrt)
+  override val inspections = Seq(UseSqrt)
 
   "using pow instead of sqrt" - {
     "should report warning" in {

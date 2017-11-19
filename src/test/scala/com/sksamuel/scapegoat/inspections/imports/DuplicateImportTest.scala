@@ -7,7 +7,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class DuplicateImportTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new DuplicateImport)
+  override val inspections = Seq(DuplicateImport)
 
   "DuplicatedImport" - {
     "should report warning" - {

@@ -10,7 +10,7 @@ class NegativeSeqPadTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new NegativeSeqPad)
+  override val inspections = Seq(NegativeSeqPad)
 
   "self assignment" - {
     "should report warning" - {

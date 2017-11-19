@@ -11,7 +11,7 @@ class BoundedByFinalTypeTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new BoundedByFinalType)
+  override val inspections = Seq(BoundedByFinalType)
 
   "BoundedByFinalType" - {
     "should report warning" - {

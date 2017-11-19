@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class CollectionNamingConfusionTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new CollectionNamingConfusion)
+  override val inspections = Seq(CollectionNamingConfusion)
 
   "collection confusing names" - {
     "should report warning" in {

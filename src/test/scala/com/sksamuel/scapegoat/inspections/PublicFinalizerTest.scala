@@ -6,7 +6,7 @@ import org.scalatest.{ FreeSpec, Matchers, OneInstancePerTest }
 /** @author Stephen Samuel */
 class PublicFinalizerTest extends FreeSpec with Matchers with PluginRunner with OneInstancePerTest {
 
-  override val inspections = Seq(new PublicFinalizer)
+  override val inspections = Seq(PublicFinalizer)
 
   "public finalizer" - {
     "should report warning" - {

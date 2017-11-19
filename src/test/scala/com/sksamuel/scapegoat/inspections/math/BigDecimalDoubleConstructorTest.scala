@@ -10,7 +10,7 @@ class BigDecimalDoubleConstructorTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new BigDecimalDoubleConstructor)
+  override val inspections = Seq(BigDecimalDoubleConstructor)
 
   "big decimal double constructor" - {
     "should report warning" in {

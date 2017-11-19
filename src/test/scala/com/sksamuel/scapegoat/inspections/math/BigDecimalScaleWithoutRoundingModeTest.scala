@@ -10,7 +10,7 @@ class BigDecimalScaleWithoutRoundingModeTest
     with PluginRunner
     with OneInstancePerTest {
 
-  override val inspections = Seq(new BigDecimalScaleWithoutRoundingMode)
+  override val inspections = Seq(BigDecimalScaleWithoutRoundingMode)
 
   "BigDecimalScaleWithoutRoundingMode" - {
     "should report warning" - {
